@@ -1,5 +1,6 @@
 ---
 name: torque
 layout : club
+image: avatar.jpg
 ---
-The automobile Club of IIT Hyderabad
+The Automobile Club of IIT Hyderabad
