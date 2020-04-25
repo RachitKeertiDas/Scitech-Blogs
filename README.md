@@ -27,3 +27,7 @@ go to `localhost:/4000/clubs/lambda.html` for how to write a new post.
 2. Add pagination 
 3. Write the main landing page
 4. Write a club page
+
+## Credits:
+
+[HTML5UP](www.html5up.net) for the theme [Future Imperfect](www.html5up.net/future-imperfect)
