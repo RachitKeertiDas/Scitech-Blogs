@@ -1,0 +1,4 @@
+---
+name: Cepheid
+layout: club
+---
