@@ -1,4 +1,4 @@
 ---
-name: Cepheid
+name: cepheid
 layout: club
 ---

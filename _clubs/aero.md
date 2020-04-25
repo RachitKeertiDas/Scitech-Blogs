@@ -1,5 +1,5 @@
 ---
 
-name: Aero
+name: aero
 layout: club
 ---

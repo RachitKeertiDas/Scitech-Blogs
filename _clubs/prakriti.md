@@ -1,4 +1,4 @@
 ---
-name: Prakriti
+name: prakriti
 layout: club
 ---

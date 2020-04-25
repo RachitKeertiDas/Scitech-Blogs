@@ -1,5 +1,5 @@
 ---
-name: Infero
+name: infero
 layout: club
 ---
 
