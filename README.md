@@ -1,17 +1,16 @@
-# Blog template for SCITECH-IITH
-This template is for blogging functionality for Scitech-COuncil, IIT-Hyderabad
-
-### What's working:
-
+# Blog template for SciTech-IITH
+This template is for blogging functionality implemented to be used by the Scitech-Council, IIT-Hyderabad.
 
 ### How to use:
-Download the repo
+Install ruby on your system if you haven't already.
+Download or git clone the repository
 `cd` into it
 run `bundle exec jekyll serve`
+navigate to `localhost:4000`
 
 ### What's working:
-Each of the club pages
-Each of the posts
+1. Each of the club pages
+2. Each of the posts
 
 ### What isn't
 1. Main landing pages
@@ -20,7 +19,7 @@ Each of the posts
 ### How to preview:
 go to `localhost:/4000/clubs/prakriti.html` for how multiple posts are stacked up
 
-go to `localhost:/4000/clubs/lambda.html` for how to write a new post.
+view the README post `localhost:4000/clubs/lambda.html` for how to write a new post.
 
 ### TODO:
 1. Finish this Readme
@@ -30,4 +29,4 @@ go to `localhost:/4000/clubs/lambda.html` for how to write a new post.
 
 ## Credits:
 
-[HTML5UP](www.html5up.net) for the theme [Future Imperfect](www.html5up.net/future-imperfect)
+[HTML5UP](https://www.html5up.net) for the theme [Future Imperfect](https://www.html5up.net/future-imperfect)
