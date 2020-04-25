@@ -14,8 +14,22 @@
                         <div class="title">
                             <h2><a href="{{ post.url }}">{{ post.title }}</a>                                
                             </h2>
+                            {% if post.header_line %}
+                            <p>{{ post.header_line }}</p>
+                            {% endif %}
+                        </div>
+                        <div class="meta">
+                            <time class="published" datetime="{{ post.date }}">{{ post.date|date_to_string }}</time>
+                            <a href="#" class="author">
+                                <span class="name">{{ post.club }} Staff</span>
+                                <img src="/assets/images/{{ page.image }}" alt="" />
+                            </a>
                         </div>
                     </header>
+                    {% if post.hero_image %}
+                    <a href="" class="image featured">
+                        <img src="{{ post.hero_image}}"/></a>
+                    {% endif %}
                     {{post.excerpt}}
                 </article>
                 {% endfor %}
@@ -24,7 +38,7 @@
             <section id="sidebar">
                 <!-- Intro -->
                 <section id="intro">
-                    <a href="#" class="logo"><img src="assets/images/logo.jpg" alt=""/></a>
+                    <a href="#" class="logo"><img src="/assets/images/logo.jpg" alt=""/></a>
                     <header>
                         <h2>
                             {{ page.name }}
@@ -44,6 +58,7 @@
                         </ul>
                     </section>
                 <!--Footer-->
+                {% include footer.html %}
             </section>
         </div>
 

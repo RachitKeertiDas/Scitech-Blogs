@@ -9,17 +9,31 @@
                     <header>                     
                         <div class="title">
                             <h2>{{page.title}}</h2>
+                            {% if page.header_line %}
+                            <p>{{ page.header_line }}</p>
+                            {% endif %}
                         </div>
                         <div class="meta">
+                            {% assign club = site.clubs | where: 'name', page.club | first %}
                             <time class="published" datetime="{{ page.date }}">{{ page.date| date_to_string }}</time>
-                            <a href="#" class="author">{{page.club}} Staff</a>
+                            {% if club %}
+                            <a href="{{ club.url }}" class="author">
+                                <span class="name">{{page.club}} Staff</span>
+                                <img src="/assets/images/{{club.image}}"/>
+                            </a>
+                            {% endif %}
                         </div>
                     </header>
+                        {% if page.hero_image %}
+                            <a href="" class="image featured">
+                            <img src="{{ page.hero_image}}"/></a>
+                        {% endif %}
                         {{content}}
                     </div>
                 </article>
             </div>
         </div>
+        {% include footer.html %}
         {% include scripts.html %}
     </body>
 </html>

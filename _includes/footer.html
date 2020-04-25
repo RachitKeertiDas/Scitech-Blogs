@@ -1,0 +1,30 @@
+<section id="footer">
+    <ul class="icons">
+        {% if page.twitter %}
+        <li><a href="{{page.twitter}}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        {% else %}
+        <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        {% endif %}
+
+        {% if page.facebook %}
+        <li><a href="{{page.facebook}}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        {% else %}
+        <li><a href="" class="icon brands fa-facebook-f"><span class="label">Twitter</span></a></li>
+        {% endif %}
+
+        {% if page.instagram %}
+        <li><a href="{{page.instagram}}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        {% else %}
+        <li><a href="" class="icon brands fa-instagram"><span class="label">Twitter</span></a></li>
+        {% endif %}
+
+        {% if page.email %}
+        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        {% else %}
+        <li><a href="{{page.email}}" class="icon solid fa-envelope"><span class="label">Twitter</span></a></li>
+        {% endif %}
+
+    </ul>
+    <p class="copyright">&copy; Scitech Council IIT Hyderabad. Design: <a href="http://html5up.net">HTML5 UP</a>.
+    </p>
+</section>
