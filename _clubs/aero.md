@@ -1,5 +1,4 @@
 ---
-
 name: aero
 layout: club
 ---
