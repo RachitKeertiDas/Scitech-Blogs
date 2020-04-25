@@ -5,7 +5,21 @@
         <div id="wrapper">
             {% include navigation.html %}
             <div id="main">
-        
+                <!--Posts-->
+                <ul>
+                {% assign filtered_posts = site.posts | where: 'club', page.name %}
+                {% for post in filtered_posts %}
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2><a href="{{ post.url }}">{{ post.title }}</a>                                
+                            </h2>
+                        </div>
+                    </header>
+                    {{post.excerpt}}
+                </article>
+                {% endfor %}
+                </ul>
             </div>
             <section id="sidebar">
                 <!-- Intro -->
