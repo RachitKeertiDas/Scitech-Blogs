@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    {% include head.html %}
+    <body class="is-preload">
+        <div id="wrapper">
+            {% include navigation.html %}
+            <div id="main">
+        
+            </div>
+            <section id="sidebar">
+                <!-- Intro -->
+                <section id="intro">
+                    <a href="#" class="logo"><img src="assets/images/logo.jpg" alt=""/></a>
+                    <header>
+                        <h2>
+                            {{ page.name }}
+                        </h2>
+                        <p>
+
+                        </p>
+                    </header>
+                </section>
+
+                <!-- About-->
+                    <section class="blurb">
+                        <h2>About</h2>
+                        <p>{{ page.content|markdownify }}</p>
+                        <ul class="actions">
+                            <li><a href="#" class="button">Learn More</a></li>
+                        </ul>
+                    </section>
+                <!--Footer-->
+            </section>
+        </div>
+
+    {% include scripts.html %}
+    </body>
+</html>
