@@ -6,5 +6,15 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
-paginate: 2
-paginate_path: "/posts/page:num"
+#Old,deprecated,mostly limited pagination settings.
+#paginate: off
+#paginate_path: nil
+
+#Jekyll Pagination Settings
+#Not supported by Github Pages.
+pagination:
+  enabled: true
+  per_page: 2
+  offset: 1
+  sort_field: date
+  category: posts
