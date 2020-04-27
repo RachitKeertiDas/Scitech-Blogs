@@ -104,26 +104,26 @@ pagination:
 									{% if paginator.total_pages <= 5 %}
 										{% for each in (1..paginator.total_pages) %}
 											{% if each == paginator.page %}
-												<a href="/page{{each}}" class="page active">{{each}}</a>
+												<a href="/page{{each}}/#main" class="page active">{{each}}</a>
 											{% else %}
-												<a href="/page{{each}}" class="page">{{each}}</a>
+												<a href="/page{{each}}/#main" class="page">{{each}}</a>
 											{% endif %}
 										{% endfor %}
 									{% else %}
 										{% for each in (1..paginator.total_pages) %}
 										{% if each == paginator.page %}
-											<a href="/page{{each}}" class="page active">{{each}}</a>
+											<a href="/page{{each}}/#main" class="page active">{{each}}</a>
 										{% elsif each == 2 or each==paginator.total_pages-1 %}
 											<span class="extra">&hellip;</span>
 										{% elsif each == 1 %}
 											<a href="/index" class="page">{{each}}</a>
 										{% elsif each == paginator.total_posts%}
-											<a href="/page{{each}}" class="page">{{each}}</a>
+											<a href="/page{{each}}/#main" class="page">{{each}}</a>
 										{% endif %}
 										{% endfor %}
 									{% endif %}
 									
-									<a href="{{paginator.next_page_path}}" class="next">Next</a>
+									<a href="{{paginator.next_page_path}}/#main" class="next">Next</a>
 								</div>
 							</footer>
 
