@@ -12,6 +12,11 @@ plugins:
 
 #Jekyll Pagination Settings
 #Not supported by Github Pages.
+autopages:
+  enabled: true
+  collections:
+    enabled: true
+
 pagination:
   enabled: true
   per_page: 2
