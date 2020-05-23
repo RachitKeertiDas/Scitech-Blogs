@@ -1,6 +1,6 @@
 ---
 name: kludge
 layout: club
-image: avatar.jpg
+image: kludge.jpeg
 ---
 Ethical Hacking Club at IIT-Hyderabad

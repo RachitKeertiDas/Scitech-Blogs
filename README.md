@@ -3,8 +3,8 @@ This template is for blogging functionality implemented to be used by the Scitec
 
 ### How to use:
 Install ruby on your system if you haven't already.
-Download or git clone the repository
-`cd` into it
+Download or git clone the repository  
+`cd` into it  
 run `bundle exec jekyll serve`
 navigate to `localhost:4000`
 

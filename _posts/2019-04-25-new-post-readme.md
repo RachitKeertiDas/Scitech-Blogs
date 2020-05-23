@@ -1,5 +1,5 @@
 ---
-club: lambda
+club: kludge
 layout: post
 header_line: "How to create a new post"
 ---
@@ -7,7 +7,7 @@ header_line: "How to create a new post"
 ### Guidelines to create a new post:
 To create a new post, follow the given steps:
 
-1. Write your post in markdown
+1. Write your post in markdown.
 2. Make sure to have different paragraphs in your post 
 3. The front matter of your post should look similar to the following:
 ```
